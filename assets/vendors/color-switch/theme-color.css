@@ -1,4 +1,6 @@
 :root {
-    --thm-base: #3554d1;
-    --thm-base-rgb: 53, 84, 209;
+    /* --thm-base: #3554d1;
+    --thm-base-rgb: 53, 84, 209; */
+    --thm-base: #4c4c4c;
+    --thm-base-rgb: 76, 76, 76;
 }

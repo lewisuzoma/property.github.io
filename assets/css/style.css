@@ -1168,8 +1168,9 @@ animation: spinner 1s infinite linear;
   position: relative;
   display: block;
   overflow: hidden;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-radius: 6px;
+  /* border-top-left-radius: 6px;
+  border-top-right-radius: 6px; */
 }
 
 .single-properties-box-style1 .img-holder:before {
@@ -1179,8 +1180,9 @@ animation: spinner 1s infinite linear;
   left: 0;
   bottom: 0;
   right: 0;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  /* border-top-left-radius: 6px;
+  border-top-right-radius: 6px; */
+  border-radius: 6px;
   z-index: 1;
   opacity: 0;
   background: rgb(0, 0, 0);
@@ -1197,13 +1199,17 @@ animation: spinner 1s infinite linear;
 }
 
 .single-properties-box-style1:hover .img-holder img {
-  transform: rotate(0deg) scale(1.0);
+  transform: rotate(0deg) scale(1.1);
 }
 
 .single-properties-box-style1 .img-holder .overlay-content {
+  background: #ffffffbf;
+  padding: 16px;
+  margin: 16px;
+  backdrop-filter: blur(0.75em);
   position: absolute;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  /* left: 20px; */
   z-index: 3;
 }
 
@@ -1466,7 +1472,229 @@ animation: spinner 1s infinite linear;
   margin-top: 30px !important;
 }
 
+/*---------------------------------------
+ Amenities Css
+-----------------------------------------*/
+.amenities-area {
+  position: relative;
+  display: block;
+  background-color: #0A0A0A;
+  padding: 120px 90px;
+  transition: background 0.3s, border 0.3s, 
+  border-radius 0.3s, box-shadow 0.3s; 
+  /* padding: 90px 0px 0px 0px; */
+}
 
+.amenities-area .nav-tabs {
+  border-bottom: none !important; 
+  margin: initial 0px initial 0px !important;
+}
+.amenities-area .nav-tabs .nav-link{
+  border-bottom: 0.5px solid #4d4d4d !important;
+  /* border-color: transparent !important; */
+  background: transparent !important;
+}
+.amenities-area .nav-tabs .nav-link:hover{
+  color: #ffffff !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+.amenities-area .nav-tabs .nav-link.active{
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: 0.5px solid #eaeaea !important;
+  border-left: none !important;
+  /* border-color: transparent !important; */
+  color: #ffffff !important;
+  background: transparent !important;
+}
+.amenities-area .zoom-main{
+  max-height: 350px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+  float: left;
+  margin: 10px;
+}
+
+.amenities-area .zoom-main .zoom-main-img{
+  max-height: 350px;
+  float: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.amenities-area .zoom-main .zoom-main-img{
+  width: 100%;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .7s;
+  transition-property: all;
+  transform: scale(1.0);
+}
+
+.amenities-area .zoom-main:hover .zoom-main-img {
+  transform: scale(1.2) rotate(1deg);
+}
+.--1 {
+  background-image: url(/assets/skyhaus-amenities1.jpg);
+}
+.--2 {
+  background-image: url(/assets/skyhaus-amenities2.jpg);
+}
+.--3 {
+  background-image: url(/assets/skyhaus-amenities3.jpg);
+}
+
+
+/*---------------------------------------
+  About Area Css
+-----------------------------------------*/
+.about-style2-area{
+  height: 500px !important;
+}
+.about-style2-area-bg:before {
+  background-color: transparent !important;
+}
+
+
+/*---------------------------------------
+ Plans Css
+-----------------------------------------*/
+.plans-area {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 120px 90px;
+  transition: background 0.3s, border 0.3s, 
+  border-radius 0.3s, box-shadow 0.3s; 
+  /* padding: 90px 0px 0px 0px; */
+  margin: .5rem 1rem 1rem 0px !important;
+}
+.plans-area .nav-tabs {
+  border-bottom: none !important; 
+}
+.plans-area .nav-link {
+  padding: 0 !important;
+  margin: .5rem 1rem !important;
+  flex: 0 1 auto !important;
+  text-align: left !important;
+}
+.plans-area .nav-tabs .nav-link{
+  border-bottom: 0.5px solid transparent !important;
+  /* border-color: transparent !important; */
+  background: transparent !important;
+}
+.plans-area .nav-tabs .nav-link:hover{
+  color: #000 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+.plans-area .nav-tabs .nav-link.active{
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: 0.5px solid #000 !important;
+  border-left: none !important;
+  /* border-color: transparent !important; */
+  color: #000 !important;
+  background: transparent !important;
+}
+.plans-area .zoom-main{
+  max-height: 350px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+  float: left;
+  margin: 10px;
+}
+
+.plans-area .zoom-main .zoom-main-img{
+  max-height: 350px;
+  float: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.plans-area .zoom-main .zoom-main-img{
+  width: 100%;
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .7s;
+  transition-property: all;
+  transform: scale(1.0);
+}
+
+.plans-area .zoom-main:hover .zoom-main-img {
+  transform: scale(1.2) rotate(1deg);
+}
+
+/* .--1 {
+  background-image: url(/assets/skyhaus-amenities1.jpg);
+}
+.--2 {
+  background-image: url(/assets/skyhaus-amenities2.jpg);
+}
+.--3 {
+  background-image: url(/assets/skyhaus-amenities3.jpg);
+} */
+
+
+/*---------------------------------------
+  Gallery Area Css
+-----------------------------------------*/
+.gallery-area {
+  background: #E0D2C9;
+  padding: 5rem 0 2rem
+}
+.gallery-area--2 {
+  background: #000;
+  padding: 6rem 0;
+  color: #c4c4c4 !important;
+}
+.gallery-area--2 .nav-pills .nav-link{
+  color: #c4c4c4 !important;
+  font-weight: bolder !important;
+  text-align: left;
+  padding: 10px 0 !important;
+}
+.gallery-area--2 .nav-pills .nav-link.active{
+  background: transparent !important;
+  color: #fff !important;
+  border-bottom: 3.5px solid #c4c4c4 !important;
+  border-radius: 0;
+}
+.gallery-area--2 .gallery-img {
+  transition: transform 0.3s ease;
+}
+.gallery-area--2 .gallery-img:hover {
+  transform: translateY(-10px);
+}
+
+.fact-counter-style2-area .item .mt-image-list {
+  transition: transform 0.3s ease;
+}
+
+.fact-counter-style2-area .item:hover .mt-image-list {
+  transform: translateY(-10px);
+}
 
 /*---------------------------------------
   Explore Our properties Area Css
